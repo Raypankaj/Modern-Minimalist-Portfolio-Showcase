@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="p4.css">
+</head>
+<body>
+    <section class="hero-sec">
+        <div class="bg-img">
+        </div>
+        <div class="ask-page">
+            <p>
+                WORK , I CAN DO FOR <span class="latter-big">YOU</span>
+            </p>
+        </div>
+    </section>
+    <section class="services">
+        <div class="web focous">
+            <div class="web-img"></div>
+            <h1>Web Development</h1>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                 Animi quis aliquam itaque unde ex. Eos temporibus illum at libero, 
+                 iusto incidunt voluptate est nobis dolore, veniam porro ad eius repellat.
+            </p>
+        </div>
+        <div class="app focous">
+            <div class="app-img"></div>
+            <h1>App Development</h1>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                 Animi quis aliquam itaque unde ex. Eos temporibus illum at libero, 
+                 iusto incidunt voluptate est nobis dolore, veniam porro ad eius repellat.
+            </p>
+        </div>
+        <div class="ui-ux focous">
+            <div class="ui-ux-img"></div>
+            <h1>ui/ux Design</h1>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                 Animi quis aliquam itaque unde ex. Eos temporibus illum at libero, 
+                 iusto incidunt voluptate est nobis dolore, veniam porro ad eius repellat.
+            </p>
+        </div>
+    </section>
+    <section class="connect">
+        <div class="contact-us">
+            <h1>contact us</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis corporis laborum eligendi nobis explicabo odio veritatis, recusandae minus ex porro, doloribus minima in aut, accusantium commodi asperiores nemo quas fugiat!
+            Magnam molestias quidem voluptatem? Eaque a voluptate amet, aliquam dolore consequatur numquam consequuntur similique, reiciendis ad, soluta id eum itaque. Eveniet hic, aperiam dolor sed eos temporibus voluptatibus quia perferendis.
+            Vel voluptatibus eveniet minima molestiae unde veniam fugit, et culpa quia tempora libero numquam ratione laudantium magni. Commodi quo praesentium tenetur ipsam delectus, ab dolorem debitis odio nisi magni soluta.
+            Optio dolorem, obcaecati, illo dolor nostrum expedita excepturi repudiandae, magnam doloribus quisquam hic eos. Sed sunt odit, facere culpa pariatur quo enim eos ut, nesciunt, sapiente ipsam? Suscipit, consequuntur est!
+            Cumque dolores pariatur ab vel, fugiat maiores, harum voluptate error ratione saepe odio sapiente ex animi beatae nostrum minus nam non! Doloribus a labore et excepturi quasi! Corrupti, et fugiat.
+        </div>
+        <div class="about-me">
+            <h1>About Me</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum optio quibusdam possimus corporis aliquid inventore veniam dolorem impedit accusantium, mollitia, cum nihil hic voluptates unde, distinctio eos officiis laudantium cupiditate?
+            Ratione quod tempore aliquid aspernatur quam incidunt ipsam quasi molestiae quibusdam est? Reiciendis quaerat dolore corrupti aut soluta cum! Aut eum aliquid laboriosam ea ab ipsam ratione obcaecati non cupiditate.
+            Id, ex corrupti. Ipsam, in ea eaque quam neque, reprehenderit minus, repellat asperiores veritatis consequuntur commodi itaque laboriosam magni debitis? Consectetur modi nulla deleniti eligendi sequi, esse aliquam et id.
+            Velit eos quisquam iusto recusandae modi iure quis totam nulla architecto a, consectetur impedit, aspernatur sapiente aut repudiandae inventore odio pariatur officiis eaque blanditiis, nam illum mollitia nostrum eligendi. Ratione!
+            Reprehenderit expedita non deserunt est esse. Asperiores tenetur incidunt labore distinctio reiciendis possimus, voluptas iste repudiandae? Architecto, qui blanditiis. Excepturi neque aliquid quam obcaecati quis magni assumenda voluptate odit repellat.
+        </div>
+    </section>
+    <form class="submition ">
+
+    </form>
+    <script>
+        const loginConfirmation  = confirm(' do you want submit your message with contact details ');
+        if(loginConfirmation){
+             let form = document.querySelector('.submition');
+             form.innerHTML += ` 
+             
+    <section class="query-container">
+        <h1 class="query-main-heading">
+            Raise Your Request  Here!
+        </h1>
+            <form class="input-form">
+              <li class="form-dec">  <label for="name">Name*:</label></li>
+              <li class="form-dec"> <input  type="text" id="name" required><br></li>
+              <li class="form-dec"> <label  for="email">Email Address*:</label></li>
+              <li class="form-dec"> <input  type="email" id="email" required><br></li>
+              <li class="form-dec"> <label  for="phone">Phone Number (Optional):</label></li>
+              <li class="form-dec"> <input  type="tel" id="phone"><br></li>
+              <li class="form-dec"> <label  style="margin: 20px; font-size: large;" for="message">Message*:</label></li>
+              <li class="form-dec"> <textarea class="form-dec" id="message" rows="4" cols="50" required></textarea><br></li>
+              <li class="form-dec">  <button  onclick="sendRequest()" class="submit-btn">Submit Query</button></li>
+              <div class="design-contaner"></div>
+            <div class="side-design"></div>
+            <div class="side-design"></div>
+        </div>
+            </form>
+        <!-- <div class="design-contaner"></div>
+            <div class="side-design"></div>
+            <div class="side-design"></div>
+        </div> -->
+    </section>
+
+             `;
+             
+             
+        }else{
+             alert("your message has not been submitted")
+         }
+         document.getElementById("submitBtn").addEventListener("click", function(){
+                 alert("your message has been submitted");
+         })
+     </script>
+</body>
+</html>

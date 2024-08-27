@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="query.css">
+    <title>Query</title>
+</head>
+<body>
+    <section class="query-container">
+        <h1 class="query-main-heading">
+            Raise Your Request  Here!
+        </h1>
+            <form class="input-form">
+              <li class="form-dec">  <label for="name">Name*:</label></li>
+              <li class="form-dec"> <input  type="text" id="name" required><br></li>
+              <li class="form-dec"> <label  for="email">Email Address*:</label></li>
+              <li class="form-dec"> <input  type="email" id="email" required><br></li>
+              <li class="form-dec"> <label  for="phone">Phone Number (Optional):</label></li>
+              <li class="form-dec"> <input  type="tel" id="phone"><br></li>
+              <li class="form-dec"> <label  style="margin: 20px; font-size: large;" for="message">Message*:</label></li>
+              <li class="form-dec"> <textarea class="form-dec" id="message" rows="4" cols="50" required></textarea><br></li>
+              <li class="form-dec">  <button  onclick="sendRequest()" class="submit-btn">Submit Query</button></li>
+              <div class="design-contaner"></div>
+            <div class="side-design"></div>
+            <div class="side-design"></div>
+        </div>
+            </form>
+        <!-- <div class="design-contaner"></div>
+            <div class="side-design"></div>
+            <div class="side-design"></div>
+        </div> -->
+    </section>
+</body>
+</html>
